@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-	  res.render('task', { title: 'Express' });
+	  res.render('task', { title: 'DashBoard Home' });
 	});
 
 module.exports = router;
