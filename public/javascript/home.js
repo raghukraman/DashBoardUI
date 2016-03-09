@@ -1,4 +1,5 @@
 // Userlist data array for filling in info box
+//var dboard = require('dashboardenv');
 var userListData = [];
 
 // DOM Ready =============================================================
@@ -16,9 +17,9 @@ function populateTable() {
 
     // Empty content string
     var tableContent = '';
-
+    console.log(env.getUrl('dboard/list'));
     // jQuery AJAX call for JSON
-    $.getJSON( 'http://localhost:7070/DashBoardService/dboard/list', function( data ) {
+    $.getJSON( env.getUrl('dboard/list') , function( data ) {
 
         // For each item in our JSON, add a table row and cells to the content string
         $.each(data, function(){
