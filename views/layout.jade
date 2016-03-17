@@ -2,10 +2,11 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheet/style.css')
+    link(rel='stylesheet', href='/stylesheet/dboard.css')
+    link(rel='stylesheet', href='/stylesheet/jquery/jquery.dataTables.min.css')
   body
     block content
-    script(src='/javascript/jquery/jquery.min.js')
+    script(src='/javascript/jquery/jquery-1.12.0.min.js')
+    script(src='/javascript/jquery/jquery.dataTables.min.js')
     script(src='/javascript/dashboardenv.js')
     script(src='/javascript/home.js')
-    
